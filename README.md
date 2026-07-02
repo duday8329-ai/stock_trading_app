@@ -1,5 +1,7 @@
 # SB Stocks
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/duday8329-ai/stock_trading_app)
+
 SB Stocks is a paper-trading app for simulated US stock trading. It uses virtual cash only. There is no brokerage integration, no payment flow, and no real order execution.
 
 ## Stack
@@ -45,6 +47,10 @@ pnpm run dev
 ```
 
 The API runs on `http://localhost:5000` and the client runs on `http://localhost:5173`.
+
+## Deploy
+
+Use the Deploy to Render button above. Render creates one web service that hosts both the React frontend and Express API. During setup, enter `MONGO_URI` and `FINNHUB_API_KEY`; `JWT_SECRET` is generated automatically. Never commit `server/.env`.
 
 ## Demo Login
 

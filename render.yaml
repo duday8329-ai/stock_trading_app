@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: sb-stocks
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm --filter sb-stocks-client run build
+    startCommand: pnpm --filter sb-stocks-server run start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FINNHUB_API_KEY
+        sync: false
+      - key: STARTING_CASH
+        value: "100000"
+      - key: MARKET_CACHE_TTL_SECONDS
+        value: "45"

@@ -7,6 +7,8 @@ import { errorHandler, notFound } from './middleware/errorHandler.js';
 import authRoutes from './routes/authRoutes.js';
 import stockRoutes from './routes/stockRoutes.js';
 import tradeRoutes from './routes/tradeRoutes.js';
+import watchlistRoutes from './routes/watchlistRoutes.js';
+import adminRoutes from './routes/adminRoutes.js';
 
 export const createApp = () => {
   const app = express();
@@ -20,6 +22,8 @@ export const createApp = () => {
   app.use('/api/auth', authRoutes);
   app.use('/api/stocks', stockRoutes);
   app.use('/api', tradeRoutes);
+  app.use('/api/watchlist', watchlistRoutes);
+  app.use('/api/admin', adminRoutes);
   app.use(notFound);
   app.use(errorHandler);
 

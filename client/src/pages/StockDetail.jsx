@@ -1,4 +1,4 @@
-import { Search } from 'lucide-react';
+import { ListPlus, Search } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { Link, useNavigate, useParams } from 'react-router-dom';
@@ -18,6 +18,7 @@ export default function StockDetail() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
   const [trading, setTrading] = useState(false);
+  const [watching, setWatching] = useState(false);
 
   const loadStock = async () => {
     setLoading(true);
@@ -70,6 +71,17 @@ export default function StockDetail() {
       setError(err.message);
     } finally {
       setTrading(false);
+    }
+  };
+
+  const addToWatchlist = async () => {
+    try {
+      await api('/watchlist', { method: 'POST', body: JSON.stringify({ ticker }) });
+      setWatching(true);
+      setMessage(`${ticker} added to your watchlist.`);
+      setError('');
+    } catch (err) {
+      setError(err.message);
     }
   };
 
@@ -128,6 +140,9 @@ export default function StockDetail() {
 
       <aside className="panel h-fit">
         <h2 className="text-xl font-bold">Trade {ticker}</h2>
+        <button type="button" className="btn-ghost mt-4 w-full" disabled={watching} onClick={addToWatchlist}>
+          <ListPlus size={16} /> {watching ? 'In watchlist' : 'Add to watchlist'}
+        </button>
         <form onSubmit={submitTrade} className="mt-5 space-y-4">
           <div className="grid grid-cols-2 gap-2">
             <button type="button" className={side === 'buy' ? 'btn-primary' : 'btn-ghost'} onClick={() => setSide('buy')}>Buy</button>

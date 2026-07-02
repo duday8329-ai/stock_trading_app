@@ -24,3 +24,10 @@ export const requireAuth = async (req, res, next) => {
     return res.status(401).json({ message: 'Invalid or expired session.' });
   }
 };
+
+export const requireAdmin = (req, res, next) => {
+  if (req.user?.role !== 'admin') {
+    return res.status(403).json({ message: 'Administrator access required.' });
+  }
+  return next();
+};

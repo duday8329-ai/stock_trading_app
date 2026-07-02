@@ -1,4 +1,4 @@
-import { BarChart3, History, LogOut, Search, User } from 'lucide-react';
+import { BarChart3, History, ListPlus, LogOut, Search, Shield, User } from 'lucide-react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth.jsx';
 
@@ -6,6 +6,7 @@ const links = [
   { to: '/', label: 'Dashboard', icon: BarChart3 },
   { to: '/stock/AAPL', label: 'Stocks', icon: Search },
   { to: '/transactions', label: 'History', icon: History },
+  { to: '/watchlist', label: 'Watchlist', icon: ListPlus },
   { to: '/profile', label: 'Profile', icon: User }
 ];
 
@@ -22,7 +23,7 @@ export default function Layout() {
             <h1 className="text-2xl font-bold text-ink">SB Stocks</h1>
           </div>
           <nav className="flex flex-wrap items-center gap-2">
-            {links.map(({ to, label, icon: Icon }) => (
+            {[...links, ...(user?.role === 'admin' ? [{ to: '/admin/stocks', label: 'Admin', icon: Shield }] : [])].map(({ to, label, icon: Icon }) => (
               <NavLink key={to} to={to} className={({ isActive }) => `btn-ghost ${isActive ? 'border-pine text-pine' : ''}`}>
                 <Icon size={16} /> {label}
               </NavLink>

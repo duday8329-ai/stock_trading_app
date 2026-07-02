@@ -50,8 +50,10 @@ The API runs on `http://localhost:5000` and the client runs on `http://localhost
 
 After seeding:
 
-- Email: `demo@sbstocks.local`
-- Password: `DemoPass123!`
+- Trader: `demo@sbstocks.local` / `DemoPass123!`
+- Administrator: `admin@sbstocks.local` / `DemoPass123!`
+
+Users can maintain a personal watchlist. Administrators can create, edit, activate, and delete application stock records.
 
 ## Environment Variables
 
@@ -69,6 +71,10 @@ See [server/.env.example](server/.env.example).
 - `POST /api/trade/sell`
 - `GET /api/portfolio`
 - `GET /api/transactions`
+- `GET|POST /api/watchlist`
+- `DELETE /api/watchlist/:ticker`
+- `GET|POST /api/admin/stocks` (admin only)
+- `PUT|DELETE /api/admin/stocks/:id` (admin only)
 
 ## Safety
 

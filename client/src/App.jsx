@@ -7,6 +7,8 @@ import Profile from './pages/Profile.jsx';
 import Register from './pages/Register.jsx';
 import StockDetail from './pages/StockDetail.jsx';
 import Transactions from './pages/Transactions.jsx';
+import Watchlist from './pages/Watchlist.jsx';
+import AdminStocks from './pages/AdminStocks.jsx';
 
 export default function App() {
   return (
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="stock/:ticker" element={<StockDetail />} />
         <Route path="transactions" element={<Transactions />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="watchlist" element={<Watchlist />} />
+        <Route path="admin/stocks" element={<AdminStocks />} />
       </Route>
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>

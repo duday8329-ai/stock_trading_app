@@ -31,19 +31,19 @@ cp server/.env.example server/.env
 4. Install dependencies:
 
 ```bash
-pnpm install
+npm run install:all
 ```
 
 5. Seed demo data:
 
 ```bash
-pnpm run seed
+npm run seed
 ```
 
 6. Run both apps:
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 The API runs on `http://localhost:5000` and the client runs on `http://localhost:5173`.

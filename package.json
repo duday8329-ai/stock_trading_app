@@ -6,11 +6,11 @@
     "node": "20.x"
   },
   "scripts": {
-    "install:all": "pnpm install",
-    "build": "pnpm --filter sb-stocks-client run build",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client",
     "start": "node server/src/index.js",
-    "dev": "concurrently \"pnpm --filter sb-stocks-server run dev\" \"pnpm --filter sb-stocks-client run dev\"",
-    "seed": "pnpm --filter sb-stocks-server run seed"
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"

@@ -1,12 +1,11 @@
 services:
   - type: web
     name: sb-stocks
-    runtime: node
+    runtime: docker
     plan: free
     region: singapore
     branch: main
-    buildCommand: npm install --omit=dev --prefix server && npm install --include=dev --prefix client && npm run build --prefix client
-    startCommand: npm run start --prefix server
+    dockerfilePath: ./Dockerfile
     healthCheckPath: /api/health
     autoDeploy: true
     envVars:

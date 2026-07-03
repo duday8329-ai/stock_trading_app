@@ -5,8 +5,8 @@ services:
     plan: free
     region: singapore
     branch: main
-    buildCommand: corepack enable && corepack prepare pnpm@10.17.1 --activate && pnpm install --no-frozen-lockfile --prod=false && pnpm run build
-    startCommand: npm run start
+    buildCommand: npm install --omit=dev --prefix server && npm install --include=dev --prefix client && npm run build --prefix client
+    startCommand: npm run start --prefix server
     healthCheckPath: /api/health
     autoDeploy: true
     envVars:

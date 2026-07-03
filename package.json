@@ -2,8 +2,14 @@
   "name": "sb-stocks",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.17.1",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "install:all": "pnpm install",
+    "build": "pnpm --filter sb-stocks-client run build",
+    "start": "node server/src/index.js",
     "dev": "concurrently \"pnpm --filter sb-stocks-server run dev\" \"pnpm --filter sb-stocks-client run dev\"",
     "seed": "pnpm --filter sb-stocks-server run seed"
   },

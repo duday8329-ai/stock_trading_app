@@ -5,13 +5,15 @@ services:
     plan: free
     region: singapore
     branch: main
-    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm --filter sb-stocks-client run build
-    startCommand: pnpm --filter sb-stocks-server run start
+    buildCommand: corepack enable && corepack prepare pnpm@10.17.1 --activate && pnpm install --no-frozen-lockfile --prod=false && pnpm run build
+    startCommand: npm run start
     healthCheckPath: /api/health
     autoDeploy: true
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_VERSION
+        value: 20.18.1
       - key: MONGO_URI
         sync: false
       - key: JWT_SECRET

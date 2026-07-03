@@ -3,10 +3,10 @@ FROM node:22-alpine AS build
 WORKDIR /app
 
 COPY server/package*.json ./server/
-RUN npm install --omit=dev --prefix server
+RUN npm install --legacy-peer-deps --omit=dev --prefix server
 
 COPY client/package*.json ./client/
-RUN npm install --include=dev --prefix client
+RUN npm install --legacy-peer-deps --include=dev --prefix client
 
 COPY client ./client
 RUN npm run build --prefix client

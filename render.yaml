@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: sb-stocks
+    name: sb-stocks-docker
     runtime: docker
     plan: free
     region: singapore
@@ -11,10 +11,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: NODE_VERSION
-        value: 22.17.1
-      - key: COREPACK_INTEGRITY_KEYS
-        value: "0"
       - key: MONGO_URI
         sync: false
       - key: JWT_SECRET

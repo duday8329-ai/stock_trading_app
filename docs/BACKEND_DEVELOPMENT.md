@@ -4,6 +4,25 @@ Progress: 100%
 
 ## Backend Structure
 
+Story
+
+- Duration: 30m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
+
+Description:
+
+Created the backend structure using Node.js and Express.js. Organized the server into controllers, models, routes, middleware, services, and configuration folders. Added database connection setup, authentication middleware, error handling middleware, and API routing structure.
+
+Resources:
+
+- `server/src/controllers`
+- `server/src/models`
+- `server/src/routes`
+- `server/src/middleware`
+- `server/src/services`
+- `server/src/config`
+
 ```text
 server/src/
   config/
@@ -18,6 +37,26 @@ server/src/
 ```
 
 ## Development And Explanation
+
+Story
+
+- Duration: 1h 0m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
+
+Description:
+
+Developed backend APIs for user registration, login, JWT authentication, stock search, stock quote, stock history, portfolio, buy/sell trading, transaction history, watchlist, and admin stock management. Implemented business logic for sufficient cash validation, sufficient share validation, average buy price calculation, and transaction logging. Added MongoDB integration using Mongoose and protected routes using JWT.
+
+Resources:
+
+- Auth APIs
+- Stock APIs
+- Trading APIs
+- Portfolio APIs
+- Transaction APIs
+- Watchlist APIs
+- Admin stock APIs
 
 The backend exposes REST APIs for authentication, stock data, trading, portfolio, transactions, watchlist, and admin stock records.
 

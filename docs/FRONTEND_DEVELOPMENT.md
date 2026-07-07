@@ -4,6 +4,25 @@ Progress: 100%
 
 ## Frontend Structure
 
+Story
+
+- Duration: 30m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
+
+Description:
+
+Created the frontend structure for the SB Stocks paper trading platform using React.js. Organized the application into reusable folders such as components, pages, hooks, and services. Set up routing, protected pages, API communication, authentication state handling, and responsive UI styling using Tailwind CSS.
+
+Resources:
+
+- `client/src/components`
+- `client/src/pages`
+- `client/src/hooks`
+- `client/src/services`
+- `client/src/App.jsx`
+- `client/src/main.jsx`
+
 ```text
 client/src/
   components/
@@ -16,6 +35,27 @@ client/src/
 ```
 
 ## Development And Explanation
+
+Story
+
+- Duration: 1h 0m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
+
+Description:
+
+Developed the frontend screens for login, register, dashboard, stock detail, transactions, profile, watchlist, and admin stock management. Integrated frontend with backend APIs for authentication, portfolio data, stock search, buy/sell actions, transaction history, and watchlist features. Added loading states, error handling, form validation, and responsive design.
+
+Resources:
+
+- Login page
+- Register page
+- Dashboard page
+- Stock detail page
+- Transactions page
+- Profile page
+- Watchlist page
+- Admin stocks page
 
 Pages:
 

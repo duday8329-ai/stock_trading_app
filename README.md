@@ -15,6 +15,8 @@ Overall progress: 100%
 - [Frontend Development](docs/FRONTEND_DEVELOPMENT.md): 100%, complexity medium, duration 8h 0m, stories 2
 - [Project Execution](docs/PROJECT_EXECUTION.md): 100%, complexity medium, duration 30m, stories 3
 
+Per-story tracker evidence is available in [docs/tracker-stories](docs/tracker-stories).
+
 Live demo: https://sb-stocks-docker.onrender.com
 
 ## Stack

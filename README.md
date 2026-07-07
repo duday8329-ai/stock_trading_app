@@ -4,6 +4,19 @@
 
 SB Stocks is a paper-trading app for simulated US stock trading. It uses virtual cash only. There is no brokerage integration, no payment flow, and no real order execution.
 
+## Project Progress
+
+Overall progress: 100%
+
+- [Project Architecture](docs/PROJECT_ARCHITECTURE.md): 100%
+- [Project Setup And Configuration](docs/PROJECT_SETUP_AND_CONFIGURATION.md): 100%
+- [Backend Development](docs/BACKEND_DEVELOPMENT.md): 100%
+- [Database Development](docs/DATABASE_DEVELOPMENT.md): 100%
+- [Frontend Development](docs/FRONTEND_DEVELOPMENT.md): 100%
+- [Project Execution](docs/PROJECT_EXECUTION.md): 100%
+
+Live demo: https://sb-stocks-docker.onrender.com
+
 ## Stack
 
 - Client: React, React Router, Tailwind CSS, Recharts

@@ -1,8 +1,29 @@
 # Project Architecture
 
+Complexity: medium
+
+Duration: 1h 0m
+
 Progress: 100%
 
+Stories: 6
+
+## Completion Summary
+
+- Technical Architecture: 100%
+- ER Diagram: 100%
+- Features: 100%
+- Roles And Responsibilities: 100%
+- User Flow: 100%
+- MVC Pattern: 100%
+
 ## Technical Architecture
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 SB Stocks uses the MERN stack.
 
@@ -14,6 +35,12 @@ SB Stocks uses the MERN stack.
 - Deployment: Docker service on Render
 
 ## ER Diagram
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 ```mermaid
 erDiagram
@@ -68,6 +95,12 @@ erDiagram
 
 ## Features
 
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
+
 - User registration, login, logout, and persisted JWT session
 - Protected dashboard with cash balance, holdings, portfolio value, and gain/loss
 - Stock search by ticker/name
@@ -82,12 +115,24 @@ erDiagram
 
 ## Roles And Responsibilities
 
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
+
 - User: registers, logs in, searches stocks, buys/sells virtual shares, views holdings, manages watchlist, reviews transactions.
 - Admin: manages stock records through protected admin routes and UI.
 - Backend: validates requests, protects routes, manages trading rules, connects to MongoDB, calls market data service.
 - Frontend: displays pages, handles forms, stores token, calls backend APIs, renders charts and loading/error states.
 
 ## User Flow
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 ```mermaid
 flowchart TD
@@ -105,6 +150,12 @@ flowchart TD
 ```
 
 ## MVC Pattern
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 - Models: `server/src/models`
 - Views/UI: `client/src/pages` and `client/src/components`

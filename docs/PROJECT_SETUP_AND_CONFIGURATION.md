@@ -1,8 +1,26 @@
 # Project Setup And Configuration
 
+Complexity: medium
+
+Duration: 30m
+
 Progress: 100%
 
+Stories: 3
+
+## Completion Summary
+
+- Creating Project Folder: 100%
+- Client Setup: 100%
+- Server Setup: 100%
+
 ## Creating Project Folder
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 The project is organized into a full-stack structure:
 
@@ -17,6 +35,12 @@ stock_trading_app/
 ```
 
 ## Client Setup
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 The client is built with React and Vite.
 
@@ -36,6 +60,12 @@ client/src/services
 ```
 
 ## Server Setup
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 The server is built with Node.js and Express.
 

@@ -1,8 +1,26 @@
 # Project Execution
 
+Complexity: medium
+
+Duration: 30m
+
 Progress: 100%
 
+Stories: 3
+
+## Completion Summary
+
+- Steps For Project Execution: 100%
+- Output Screenshots: 100%
+- Drive Links: 100%
+
 ## Steps For Project Execution
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 Local execution:
 
@@ -31,6 +49,12 @@ Demo users after seeding:
 
 ## Output Screenshots
 
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
+
 Suggested screenshots for submission:
 
 - Login page
@@ -51,6 +75,12 @@ docs/screenshots/
 ```
 
 ## Drive Links
+
+Story
+
+- Duration: 10m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 Add final presentation/report/screenshot drive links here:
 

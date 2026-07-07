@@ -8,12 +8,12 @@ SB Stocks is a paper-trading app for simulated US stock trading. It uses virtual
 
 Overall progress: 100%
 
-- [Project Architecture](docs/PROJECT_ARCHITECTURE.md): 100%
-- [Project Setup And Configuration](docs/PROJECT_SETUP_AND_CONFIGURATION.md): 100%
-- [Backend Development](docs/BACKEND_DEVELOPMENT.md): 100%
-- [Database Development](docs/DATABASE_DEVELOPMENT.md): 100%
-- [Frontend Development](docs/FRONTEND_DEVELOPMENT.md): 100%
-- [Project Execution](docs/PROJECT_EXECUTION.md): 100%
+- [Project Architecture](docs/PROJECT_ARCHITECTURE.md): 100%, complexity medium, duration 1h 0m, stories 6
+- [Project Setup And Configuration](docs/PROJECT_SETUP_AND_CONFIGURATION.md): 100%, complexity medium, duration 30m, stories 3
+- [Backend Development](docs/BACKEND_DEVELOPMENT.md): 100%, complexity medium, duration 8h 0m, stories 2
+- [Database Development](docs/DATABASE_DEVELOPMENT.md): 100%, complexity medium, duration 2h 0m, stories 3
+- [Frontend Development](docs/FRONTEND_DEVELOPMENT.md): 100%, complexity medium, duration 8h 0m, stories 2
+- [Project Execution](docs/PROJECT_EXECUTION.md): 100%, complexity medium, duration 30m, stories 3
 
 Live demo: https://sb-stocks-docker.onrender.com
 

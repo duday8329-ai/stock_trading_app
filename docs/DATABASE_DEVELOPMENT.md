@@ -1,12 +1,36 @@
 # Database Development
 
+Complexity: medium
+
+Duration: 2h 0m
+
 Progress: 100%
 
+Stories: 3
+
+## Completion Summary
+
+- Configure MongoDB: 100%
+- Create Database Connection: 100%
+- Create Schema And Models: 100%
+
 ## Configure MongoDB
+
+Story
+
+- Duration: 40m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 MongoDB Atlas is used for cloud database hosting. The application reads the database connection string from `MONGO_URI`.
 
 ## Create Database Connection
+
+Story
+
+- Duration: 40m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 The backend connects through Mongoose in:
 
@@ -17,6 +41,12 @@ server/src/config/db.js
 The server starts only after the database connection is ready.
 
 ## Create Schema And Models
+
+Story
+
+- Duration: 40m
+- Review: Completed
+- Assigned to: UDAY DONIKELA
 
 Models are stored in:
 

@@ -19,6 +19,8 @@ Per-story tracker evidence is available in [docs/tracker-stories](docs/tracker-s
 
 Completed phase-wise submission documents are available in [docs/phase-wise-submission](docs/phase-wise-submission).
 
+Completed FSD documentation is available in [docs/fsd-documentation](docs/fsd-documentation).
+
 Live demo: https://sb-stocks-docker.onrender.com
 
 ## Stack

@@ -17,6 +17,8 @@ Overall progress: 100%
 
 Per-story tracker evidence is available in [docs/tracker-stories](docs/tracker-stories).
 
+Completed phase-wise submission documents are available in [docs/phase-wise-submission](docs/phase-wise-submission).
+
 Live demo: https://sb-stocks-docker.onrender.com
 
 ## Stack

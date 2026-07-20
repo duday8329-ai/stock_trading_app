@@ -21,6 +21,8 @@ Completed phase-wise submission documents are available in [docs/phase-wise-subm
 
 Completed FSD documentation is available in [docs/fsd-documentation](docs/fsd-documentation).
 
+Code quality review evidence is available in [docs/CODE_QUALITY_REVIEW_100_PERCENT.md](docs/CODE_QUALITY_REVIEW_100_PERCENT.md).
+
 Live demo: https://sb-stocks-docker.onrender.com
 
 ## Stack

@@ -1,5 +1,5 @@
 import { Eye, Trash2 } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api, formatMoney } from '../services/api.js';
 
@@ -8,7 +8,7 @@ export default function Watchlist() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const load = async () => {
+  const load = useCallback(async () => {
     setLoading(true);
     try {
       const data = await api('/watchlist');
@@ -19,9 +19,9 @@ export default function Watchlist() {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
 
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); }, [load]);
 
   const remove = async (ticker) => {
     try {

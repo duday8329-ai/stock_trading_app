@@ -1,5 +1,5 @@
 import { ListPlus, Search } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { api, formatMoney } from '../services/api.js';
@@ -20,7 +20,7 @@ export default function StockDetail() {
   const [trading, setTrading] = useState(false);
   const [watching, setWatching] = useState(false);
 
-  const loadStock = async () => {
+  const loadStock = useCallback(async () => {
     setLoading(true);
     setError('');
     try {
@@ -35,11 +35,11 @@ export default function StockDetail() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [ticker]);
 
   useEffect(() => {
     loadStock();
-  }, [ticker]);
+  }, [loadStock]);
 
   const runSearch = async (event) => {
     event.preventDefault();

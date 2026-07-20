@@ -1,5 +1,5 @@
 import { Pencil, Plus, Trash2, X } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { api } from '../services/api.js';
 
 const emptyForm = { ticker: '', name: '', sector: '', active: true };
@@ -10,15 +10,15 @@ export default function AdminStocks() {
   const [editing, setEditing] = useState(null);
   const [error, setError] = useState('');
 
-  const load = async () => {
+  const load = useCallback(async () => {
     try {
       const data = await api('/admin/stocks');
       setStocks(data.stocks);
     } catch (err) {
       setError(err.message);
     }
-  };
-  useEffect(() => { load(); }, []);
+  }, []);
+  useEffect(() => { load(); }, [load]);
 
   const submit = async (event) => {
     event.preventDefault();
